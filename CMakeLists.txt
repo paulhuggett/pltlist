@@ -1,6 +1,13 @@
 cmake_minimum_required (VERSION 3.10)
 project (pltlist CXX)
-add_executable (pltlist main.cpp)
+add_executable (pltlist
+    compilation.cpp
+    compilation.hpp
+    fragment.hpp
+    main.cpp
+    symbol.cpp
+    symbol.hpp
+)
 
 if (MSVC)
     target_compile_options(pltlist PUBLIC /W4)
